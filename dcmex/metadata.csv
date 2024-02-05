@@ -1,0 +1,29 @@
+instrument_software,Labview
+instrument_software_version,'1.2'
+instrument_serial_number,8F02004
+creator_name,Dr Paul I. Williams
+creator_email,paul.i.williams@ncas.ac.uk
+creator_url,https://orcid.org/0000-0002-8973-4718
+processing_software_url,https://github.com/ncasuk/ncas-opc-1-software
+processing_software_version,1.0.0
+calibration_sensitivity,not applicable
+calibration_certification_date,not applicable
+calibration_certification_url,not applicable
+sampling_interval,6 seconds
+averaging_interval,6 seconds
+product_version,v1.0
+processing_level,1
+project,Deep Convective Microphysics Experiment (DCMEX)
+project_principal_investigator,Prof. Alan Blyth
+project_principal_investigator_email,alan.blyth@ncas.ac.uk
+project_principal_investigator_url,https://orcid.org/0000-0001-7115-2587
+platform,kiva-2-lab
+platform_type,stationary_platform
+title,Aerosol concentration measurements from DCMEX campaign
+featureType,timeSeries
+platform_altitude,3287 m
+location_keywords,Kiva-2 lab, New Mexico, USA
+comment,Quality Assurance steps: (1) Data checked for negative values and removed if required (no negatives found). (2) Time series checked to be monochronic. Additions to time series left as empty cells in data matrix. Duplications deleted. (3) 0.3um channel timeseries manually inspected for spikes and unexplainable jumps in data. None found
+measurement_technique,Mie Scattering
+lower_channel_cuf_off,0.3 um
+upper_channel_cut_off,32 um
