@@ -8,7 +8,7 @@ Create netCDF files using ncas_amof_netcdf_template module for ncas-opc-1 instru
 - need one netCDF file per day
 - the netCDF files should be created using the ncas_amof_netcdf_template module
 - the instrument name is ncas-opc-1
-- the platform name needs to be changed from the default value "mobile" to "langmuir-lab"
+- the platform name needs to be changed from the default value "mobile" to "kiva-2-lab"
 """
 
 import pandas as pd
@@ -96,7 +96,7 @@ def main(input_file, netcdf_file_location, metadata_file):
         # Check for and remove empty variables
         nant.remove_empty_variables.main(f"{netcdf_file_location}/ncas-opc-1_mobile_{date.strftime('%Y%m%d')}_aerosol-size-distribution_v1.0.nc")
 
-        # Change the platform name from "mobile" to "langmuir-lab"
+        # Change the platform name from "mobile" to "kiva-2-lab"
         os.rename(
             f"{netcdf_file_location}/ncas-opc-1_mobile_{date.strftime('%Y%m%d')}_aerosol-size-distribution_v1.0.nc",
             f"{netcdf_file_location}/ncas-opc-1_kiva-2-lab_{date.strftime('%Y%m%d')}_aerosol-size-distribution_v1.0.nc",
